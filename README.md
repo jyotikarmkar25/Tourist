@@ -1,6 +1,7 @@
 🌴 Bastar Explorer – Tourist Booking Website
 
-A modern and responsive tourist website built using HTML, CSS, and JavaScript that helps users explore popular places in Bastar and plan their trips بسهولة.
+A modern and responsive tourist website built using HTML, CSS, and JavaScript that helps users explore 
+popular places in Bastar and plan their trips بسهولة.
 
 
 
@@ -23,11 +24,17 @@ JavaScript – Functionality & Logic
 
 📂 Project Structure
 Bastar-Explorer/
+
 │
+
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 └── images/
+
 
 
 ⚙️ How to Run
