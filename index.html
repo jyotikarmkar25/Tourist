@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bastar Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <h1>Bastar Explorer 🌴</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#places">Places</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <h2>Explore Bastar</h2>
+  <p>Plan your trip easily with cost & booking</p>
+  <button onclick="scrollToBooking()">Plan Your Trip</button>
+</section>
+
+<!-- Places -->
+<section id="places">
+  <h2>Popular Places</h2>
+
+  <div class="places-container">
+
+    <div class="card" onclick="showDetails('Chitrakoot Waterfall', 500)">
+      <img src="image/Chitrakoot Falls.jpg" />
+      <h3>Chitrakoot</h3>
+      <p>₹500/person</p>
+      <button onclick="openBooking(event,'Chitrakoot Waterfall',500)">Book Now</button>
+    </div>
+
+    <div class="card" onclick="showDetails('Kanger Valley', 300)">
+      <img src="image/Kanger Valley.jpg" />
+      <h3>Kanger Valley</h3>
+      <p>₹300/person</p>
+      <button onclick="openBooking(event,'Kanger Valley',300)">Book Now</button>
+    </div>
+
+    <div class="card" onclick="showDetails('Tirathgarh Waterfall', 400)">
+      <img src="image/Tirathgarh Falls, Chhattisgarh - A Paradise on Earth.jpg" />
+      <h3>Tirathgarh</h3>
+      <p>₹400/person</p>
+      <button onclick="openBooking(event,'Tirathgarh Waterfall',400)">Book Now</button>
+    </div>
+
+  </div>
+
+  <!-- Details -->
+  <div id="details"></div>
+</section>
+
+<!-- Booking -->
+<section id="booking">
+  <h2>Book Your Trip 🚗</h2>
+
+  <div id="bookingForm">
+    <input type="text" placeholder="Your Name"><br><br>
+    <input type="number" id="persons" placeholder="Number of Persons"><br><br>
+
+    <button onclick="calculate()">Calculate Cost</button>
+
+    <h3 id="selectedPlaceText"></h3>
+    <h3 id="total"></h3>
+
+    <button onclick="confirmBooking()">Confirm Booking</button>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact / Help</h2>
+
+  <p>📞 Phone: +91 9876543210</p>
+  <p>📧 Email: bastartravel@gmail.com</p>
+  <p>📍 Location: Jagdalpur, Bastar</p>
+
+  <h3>Send Query</h3>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="email" placeholder="Your Email"><br><br>
+  <textarea placeholder="Your Message"></textarea><br><br>
+
+  <button onclick="sendMessage()">Send</button>
+</section>
+
+<footer>
+  <p>© 2026 Bastar Explorer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
